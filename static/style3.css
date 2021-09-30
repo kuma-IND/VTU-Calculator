@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #dde0d7;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  width: 25%;
+  margin:55px;
+  margin-bottom: 0px;
+  padding: 0 39px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.card-holder{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 16px;
+}
+
+.about-section {
+ padding: 5px;
+  text-align: center;
+  background-color: #adb3a0;
+  color: rgb(0, 0, 0);
+}
+
+.detail{
+  text-align: center;
+}
+
+.container {
+  padding: 0 16px;
+  text-align: center;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(107, 107, 107);
+}
+.link {
+  color: #000;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  padding: 2px;
+  color: black;
+  background-color: #adb3a0;
+  cursor: pointer;
+  width: 50%;
+}
+.linkbutton {
+  font-weight: bold;
+  font-size: medium;
+  border: none;
+  outline: none;
+  padding: 2px;
+  color: black;
+  background-color: #adb3a0;
+  cursor: pointer;
+  width: 50%;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+}
+.link:hover
+{
+  background-color: #919686;
+
+}
+.button:hover {
+  background-color: #555;
+}
+.linkbutton:hover {
+  background-color: #919686;
+}
+.project_detail{
+  text-align: center;
+
+
+}
+h3 {
+  font-family: sans-serif;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+
+  position: relative;
+}
+h3:before {
+  content: "";
+  display: block;
+  width: 450px;
+  height: 5px;
+  background: violet;
+  left: 85px;
+  top: 50%;
+  position: absolute;
+}
+h3:after {
+  content: "";
+  display: block;
+  width: 450px;
+  height: 5px;
+  background: violet;
+  right: 85px;
+  top: 50%;
+  position: absolute;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 50%;
+    display: block;
+  }
+}
+
